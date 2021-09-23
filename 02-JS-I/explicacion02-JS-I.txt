@@ -1,0 +1,35 @@
+* Variables:
+Una "Variable" es una forma de guardar algo para despues recuperarla; 
+la cual se le da un nombre y le puedo dar o no un valor. 
+El valor puede ser tipo string ("palabras" y "numeros") ej: 
+Se escribe var miNombre = "Jor";
+Tambien puede ser un numero (5; ) ej:
+var entero = 60;
+Tambien boobleano (verdader(true) o falso(false)) ej:
+var soydeIndependiente = true;
+otro tipo de variable se llama  constante, se escribe cont miNombre = "Jor";
+la deferencia entre estas,  es que esta ultima no se puede cambiar el valor.
+
+* Strings: es un tipo de valor de la variable, se escribe entre comillas ej:
+"Jor"; "2"; 
+
+* Funciones (argumentos, `return`):
+las funciones se usan para agrupar codigos que se combinan, calculan, que despues podemos invocar y que se ejecute.
+se le da un nombre ej: function miNombre () {
+    // codigo;
+}
+las funciones pueden tener argumentos que son como variables que declaramos dentro de la funcion,
+cuando alguien invoque la funcion le va a dar un valor.
+van dentro del parenteis, pueden ser vario y van separados con comas.
+se invovan con el nombre de la funcion y () ej: miNombre("jor")
+la funcion return: devuelve un valor de lo que le asignemos que haga, para eso tenemos que saber 
+los argumentos de la funcion.
+ej: return 1 + 2;
+3
+
+* Valores booleanos (`true`, `false`) 
+es para saber si una condicion o comparacion es verdadero o falso 
+ej: 1 > 2
+false
+se usa en variables y funciones
+
