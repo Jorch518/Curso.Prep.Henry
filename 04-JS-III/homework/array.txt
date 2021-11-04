@@ -1,0 +1,46 @@
+Array :
+Son lista de elementos ordenados en lo cual puedo acceder; pueden tener cualquier tipo de datos:
+(números, string, function, otro arreglo, etc.)
+
+se define usando []
+ej: var array = [1, 2, "hola", []]  
+                 0  1     2     3
+
+Para acceder lo hacemos a travez del indice que comienza en 0.
+ej: array[0] que es en este caso el primer elemento: 1
+Si quiero acceder a lo que hay en la posición 1 seria array[1] y asi sucesivamente.
+Por lo cual al poder acceder tambien puedo realizar cualquier operación como sumar, multiplicar, etc.
+ej: array[0] + 5
+En la posición 2 hay una string "hola" que tambien puedo acceder y si quiero puedo acceder a lso caracteres.
+ej: array[2] [0] 
+me va a devolver "h" 
+
+Si quiero que me de la longitud del array osea la cantidad de elementos voy a usar el metodo .length
+var array = [1, 2, "hola", []]
+console.log(array.length);  // 4
+
+Cuando no sabemos el número de elementos en una matriz voy a usar el método .length y accede al últimmo elemento.
+var array = [1, 2, "hola", []]
+console.log(array.length-1);  // []
+
+para cambiar los elementos usamos paréntesis/índice y un “=”.
+var array = [1, 2, "hola", []]
+array[0] = 5
+console.log(array);  // [5, 2, "hola", []]
+
+Otros dos métodos de matriz son .push y .pop.
+.push agrega un elemento al final de la matriz, incrementando su longitud en 1. 
+.push devuelve la nueva longitud.
+var array = [1, 2, "hola", []]
+array.push("chau")
+console.log(array);  // [5, 2, "hola", [], "chau"]
+
+.pop elimina el último elemento de la matriz, disminuyendo la longitud en 1.
+.pop devuelve el elemento “reventado”
+var array = [1, 2, "hola", []]
+array.pop()
+console.log(array);  // [5, 2, "hola"]
+
+.unshift y .shift son exactamente como .push y .pop, excepto que operan en el primer elemento de la matriz. 
+.unshift(item) colocará un nuevo elemento en la primera posición de la matriz, 
+y .shift() eliminará el primer elemento de la matriz.
