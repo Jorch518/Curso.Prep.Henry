@@ -126,6 +126,9 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  // usuarios.map(function(element)){
+  //    element.esPremium = true
+  //
     for (var i = 0; i < usuarios.length; i++) {
       usuarios[i].esPremium = true; 
     }

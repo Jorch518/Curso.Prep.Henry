@@ -1,0 +1,69 @@
+objetos:
+Es una colección de propiedades, y una "pripiedad" es una asociacion entre un nombre y un valor.
+La clave es el identificador y el valor es el valor que queremos guardar en esa clave.
+La sintaxis es “clave: valor”, deben estar separados por una coma,Las claves son únicas en un objeto, 
+solo puede haber una clave de ese nombre, 
+aunque, varias claves pueden tener el mismo valor.
+Los valores pueden ser cualquier tipo de dato de Javascript; cadena, número, booleano, matriz, función o incluso otro objeto.
+
+
+var user = {
+    username: 'juan.perez',
+    password: 'lore123',
+};
+
+
+
+
+
+Hay dos formas diferentes para acceder a los valores:
+Notación de puntos vs notación de corchetes:
+Notación de puntos:
+Con la notación de puntos podemos llamar al nombre del objeto, un punto y el nombre de la clave. 
+
+user.username;
+
+notación de corchetes: 
+La notación de corchetes es como llamar a un elemento en una matriz, aunque con corchetes debemos usar una cadena o número, 
+o una variable que apunte a una cadena o número. 
+Se puede llamar a cada clave envolviéndola con comillas:
+
+user['username'];
+
+la diferencia es que adeamas de escribir distinto en la notación de puntos 
+el interprete entiende que estoy buscando la proppiedad del objeto literalmente.
+
+
+
+Métodos: En los objetos, los valores se pueden establecer en funciones.
+         En la propiedad cuando sea una funcion se llama Método.
+
+
+
+
+Bucle `for…in`: comienza igual pero entre paréntesis declararemos una variable, 
+la palabra clave in y el nombre del objeto. Esto recorrerá cada clave del objeto y 
+finalizará cuando se hayan iterado todas las claves. 
+Podemos usar esta clave, y la notación de corchetes, 
+en nuestro bucle for para acceder al valor asociado con esa clave.
+
+const usuario = {
+    username: 'juan.perez',
+    password: 'loremipsumpwd123',
+    lovesJavascript: true,
+    favoriteNumber: 42
+};
+
+for (let clave in usuario){
+    console.log(clave);
+    console.log(usuario[clave]);
+}
+
+// username
+// 'juan.perez'
+// password
+// 'loremipsumpwd123'
+// lovesJavascript
+// true
+// favoriteNumber
+// 42
